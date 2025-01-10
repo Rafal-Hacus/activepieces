@@ -11,7 +11,7 @@ services:
     depends_on:
       - postgres
       - redis
-    env_file: .env
+    env_file: stack.env
     volumes:
       - ./cache:/usr/src/app/cache
     networks:
